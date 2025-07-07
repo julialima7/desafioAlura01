@@ -10,9 +10,6 @@ public class Desafio {
        String tipoConta = "Corrente";
        int opcao = 0;
        
-
-
-
         System.out.println("***********************");
         System.out.println("\nNome do cliente: " + nome);
         System.out.println("Tipo conta: " + tipoConta);
@@ -21,7 +18,7 @@ public class Desafio {
 
 
 
-        // menu de opções // tem que ter um scanner aqui
+        // menu de opções 
         String menu = String.format(""" 
                 Operações
                 
@@ -39,12 +36,12 @@ public class Desafio {
             // visualização de saldo
             if (opcao == 1){
                 System.out.println("Seu saldo é de: R$" + saldo);
-            } else if (opcao ==2){
+            } else if (opcao ==2){ // receber valor
                 System.out.println("Digite o valor que será recebido: ");
                 double valor = leitor.nextDouble();
                 saldo += valor;
                 System.out.println("Valor recebido, agora o seu saldo é de: " + saldo);
-            } else if (opcao == 3) {
+            } else if (opcao == 3) { // transfere valor
                 System.out.println("Qual valor deseja transferir? ");
                 double valor = leitor.nextDouble();
                 if (valor > saldo){
@@ -60,7 +57,6 @@ public class Desafio {
         }
 
 
-            // envia valor
-            // recebe valor
+
     }
 }
